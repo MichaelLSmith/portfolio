@@ -1,0 +1,56 @@
+/*Materialize Overrides*/
+nav {
+    background-color: #bc6e01;
+}
+
+/*General*/
+
+.brownBackground {
+    background-color: #bc6e01;
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+/*quote machine*/
+#quote {
+    background-color: #bc6e01;
+}
+
+#quote main {
+    width: 320px;
+    margin: 0 auto 0 auto;
+    
+    color: white;
+    
+}
+
+#quote section > p {
+   font-size: 1.2em;
+   line-height: 1.3em;
+}
+
+#quote .quote {
+    font-size: 1.2em;
+    line-height: 1.26em;
+}
+
+#quote .author {
+    font-size: 1em;
+    line-height: 1.1em;
+}
+
+#quote .textContainer {
+    width: 75%;
+    margin: 0 auto 0 auto;
+    padding-top: 5px;
+    
+    
+}

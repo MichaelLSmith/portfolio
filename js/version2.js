@@ -1,11 +1,9 @@
 var navLinks = document.querySelectorAll('li');
+var len = navLinks.length;
 
-// navLinks[1].onclick = smoothScr.anim('about');
-// navLinks[2].onclick = smoothScr.anim('portfolio');
-// navLinks[2].onclick = smoothScr.anim('contact');
-
-navLinks[1].addEventListener('click', goTo, false);
-
+for (var i = 0; i < len; i++ ){
+    navLinks[1].addEventListener('click', goTo, false);
+}
 
 function goTo(evt){
     console.log('goTo()');
@@ -15,8 +13,9 @@ function goTo(evt){
     if(id === 'toAbout'){ smoothScr.anim('about'); }
     if(id === 'toPortfolio'){
         smoothScr.anim('portfolio');}
-    }
+    
     if(id === 'toContact'){ smoothScr.anim('contact'); }
-}
+    }
+
 
 console.dir(navLinks);

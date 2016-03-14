@@ -2,7 +2,7 @@ var navLinks = document.querySelectorAll('li');
 var len = navLinks.length;
 
 for (var i = 0; i < len; i++ ){
-    navLinks[1].addEventListener('click', goTo, false);
+    navLinks[i].addEventListener('click', goTo, false);
 }
 
 function goTo(evt){

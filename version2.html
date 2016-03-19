@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/version2.css">
 <body>
 
-<div id="top">top</div>
+<div class="top">top</div>
 <main id="landing" class="pageHeight">
 
     <div id="logo">Logo Here</div>
@@ -18,23 +18,28 @@
         <h3>Junior Web Developer</h3>
     </section>
 
-    <div>Read More</div>
+    <div id="read">Read More</div>
 </main>
 
-<nav id="nav">Navigation Sticks Here
+<nav class="nav">Navigation Sticks Here
     <ul>
         <li><span id="toAbout">About</span></li>
         <li><span id="toPortfolio">Portfolio</span></li>
-        <li><span id="toContact">Contact</span></li>
+        <li><a id="toContact">Contact</a></li>
     </ul>
 </nav>
 
 <section id="about" class="pageHeight">About Me</section>
 <section id="portfolio" class="pageHeight">Portfolio</section>
-<section id="contact" class="pageHeight">Contact</section>
 
 
-<script type="text/javascript" src="js/vendor/scroll.js"></script>
+<div id="parentOfContact"><section id="contact" class="pageHeight">Contact</section></div>
+
+
+<!-- <script src="dist/js/smooth-scroll.js"></script> -->
+<!-- <script type="text/javascript" src="js/vendor/scroll.js"></script> -->
+<script src="node_modules/html.js/dist/HTML.base.js"></script>
 <script type="text/javascript" src="js/version2.js"></script>
+<script type="text/javascript" src="js/myScroll.js"></script>
 </body>
 </html>

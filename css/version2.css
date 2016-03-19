@@ -7,4 +7,9 @@
 #portfolio {
   background-color: grey; }
 
+#nav ul {
+  display: inline-block; }
+  #nav ul li {
+    display: inline-block; }
+
 /*# sourceMappingURL=version2.css.map */

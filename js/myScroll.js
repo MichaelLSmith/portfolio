@@ -9,23 +9,23 @@
 //from: http://javascript.info/tutorial/coordinates#the-right-way-elem-getboundingclientrect
 function getOffsetRect(elem) {
     // (1)
-    var box = elem.getBoundingClientRect()
-    
+    var box = elem.getBoundingClientRect();
+
     var body = document.body
     var docElem = document.documentElement
-    
+
     // (2)
     var scrollTop = window.pageYOffset || docElem.scrollTop || body.scrollTop
     var scrollLeft = window.pageXOffset || docElem.scrollLeft || body.scrollLeft
-    
+
     // (3)
     var clientTop = docElem.clientTop || body.clientTop || 0
     var clientLeft = docElem.clientLeft || body.clientLeft || 0
-    
+
     // (4)
     var top  = box.top +  scrollTop - clientTop
     var left = box.left + scrollLeft - clientLeft
-    
+
     return { top: Math.round(top), left: Math.round(left) }
 }
 
@@ -44,13 +44,13 @@ function goTo(evt){
     if(id === 'toAbout'){ let elem = document.querySelector('#about');
     console.log(elem); }
     if(id === 'toPortfolio'){ console.log('functioncall'('portfolio'));}
-    
+
     if(id === 'toContact'){ console.log('functioncall'('contact')); }
     }
 
 
 //save result of getoffset rect in a variable:
-//do we need coordinates of nav button?? or just target? Do I need to run 
+//do we need coordinates of nav button?? or just target? Do I need to run
 //getoffset rect twice?
 // let  getOffsetRect(elem);
 

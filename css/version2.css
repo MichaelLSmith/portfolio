@@ -7,9 +7,18 @@
 #portfolio {
   background-color: grey; }
 
-#nav ul {
+.fixedMenu {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  z-index: 500; }
+
+.disableMenu {
+  display: none; }
+
+.nav ul {
   display: inline-block; }
-  #nav ul li {
+  .nav ul li {
     display: inline-block; }
 
 /*# sourceMappingURL=version2.css.map */

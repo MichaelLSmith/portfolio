@@ -15,10 +15,21 @@
 }
 
 #contact {
-   
+
 }
 
-#nav {
+.fixedMenu {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    z-index: 500;
+}
+ 
+.disableMenu {
+    display: none;
+}
+
+.nav {
    ul { display: inline-block;
       li { display: inline-block; }
     }

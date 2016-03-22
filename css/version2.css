@@ -14,7 +14,7 @@
   z-index: 500; }
 
 .disableMenu {
-  display: none; }
+  visibility: hidden; }
 
 .nav ul {
   display: inline-block; }

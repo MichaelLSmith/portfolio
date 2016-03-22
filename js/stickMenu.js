@@ -1,59 +1,74 @@
 
-    let stickyMenu = {
+    var stickyMenu = {
+
+        test:'this is test string',
+
         init:function(){
+            console.log('init');
             this.htmlCache();
             this.clone();
             this.insert();
-            this.addClass();
+            this.noStickClass();
+            this.checkMenu();
         },
         htmlCache:function() {
-            this.nav = HTML.query('.nav');
+            console.log('htmlCache');
+            // this.nav;
+            this.nav = document.querySelector('.nav');
+            console.log('this.nav in htmlCache');
+            console.log(this.nav);
             this.body = HTML.body;
-            this.orig = HTML.query('.original');
         },
         clone:function() {
+            console.log('clone');
             this.cln = this.nav.cloneNode(true);
+            this.nav.classList.add('original');
+            this.orig = HTML.query('.original');
         },
         insert:function() {
+            console.log('insert');
             this.body.insertBefore(this.cln, this.nav.nextSibling);
         },
-        addClass:function() {
+        noStickClass:function() {
+            console.log('noStickClass');
+            // this.htmlCache();
+            console.log(this);
+            var print = this.nav.classList;
+            console.log(print);
             this.cln.classList.add('clone', 'disableMenu', 'fixedMenu');
-            this.orig.classList.add('original');
+            this.orig.classList.remove('disableMenu');
         },
-        removeClass:function() {
+        stickClass:function() {
+            console.log('stickClass');
             //remove disableMenu from clone;
+            this.cln.classList.remove('disableMenu');
             //add disableMenu to orig;
+            this.orig.classList.add('disableMenu');
+            console.log(this.orig.classList);
         },
         stickMenu:function(){
-            this.orgCoord = this.nav.getBoundingClientRect();
-            //if orig position === clone position --> hide orig by adding disableMenu class to orig & removing it from clone.
-            //do the opposite too.
+            console.log('stickMenu');
+            this.htmlCache();
+            console.log('this.orig in stickMenu');
+            console.log(this.orig);
+            this.orgCoord = this.orig.getBoundingClientRect();
+            console.log(this.orgCoord.top);
 
+            // if orig position === clone position --> hide orig by adding disableMenu class to orig & removing it from clone.
+            if ( this.orgCoord.top <= 0 ){
+                console.log('call stickClass()');
+                this.stickClass();
+            }
+            //do the opposite too.
+            else {
+                console.log('call noStickClass');
+                this.noStickClass();
+            }
+        },
+        checkMenu:function() {
+            console.log('checkMenu()');
+            this.scrollInterval = setInterval(this.stickMenu.bind(stickyMenu), 15000);
         }
     };
 
 stickyMenu.init();
-
-    // //get nav menu
-    // var nav = HTML.query('.nav');
-    //
-    // //add original class to nav bar
-    // nav.classList.add('original');
-    //
-    // var orig = HTML.query('.original');
-    //
-    // var body = HTML.body;
-    // //clone nav menu
-    // var cln = nav.cloneNode(true);
-    // //add css classes to cloned menu - initially set to display:none
-    // cln.classList.add('clone', 'disableMenu', 'fixedMenu');
-    // //insert cloned menu into doc
-    // body.insertBefore(cln, nav.nextSibling);
-
-//     function sticky(){
-//         var orig = nav.getBoundingClientRect();
-//         var
-//         if(orig.top <= 0)
-//     }
-// }

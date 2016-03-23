@@ -1,3 +1,6 @@
+body {
+  margin: 0; }
+
 .pageHeight {
   height: 450px; }
 
@@ -7,18 +10,32 @@
 #portfolio {
   background-color: grey; }
 
+.container {
+  width: 800px;
+  margin: auto; }
+
 .fixedMenu {
   position: fixed;
   top: 0;
   margin-top: 0;
-  z-index: 500; }
+  z-index: 500;
+  width: 800px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.original {
+  height: 50px; }
 
 .disableMenu {
   visibility: hidden; }
 
-.nav ul {
-  display: inline-block; }
-  .nav ul li {
+.nav {
+  color: white;
+  background-color: blue; }
+  .nav ul {
     display: inline-block; }
+    .nav ul li {
+      display: inline-block; }
 
 /*# sourceMappingURL=version2.css.map */

@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .pageHeight {
    height: 450px;
 }
@@ -17,12 +21,26 @@
 #contact {
 
 }
+.container {
+    width: 800px;
+    margin: auto;
+}
 
 .fixedMenu {
     position: fixed;
     top: 0;
+    // left: 0px;
     margin-top: 0;
     z-index: 500;
+    width: 800px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.original {
+    // width: 100%;
+    height: 50px;
 }
 
 .disableMenu {
@@ -30,6 +48,9 @@
 }
 
 .nav {
+    color: white;
+    background-color: blue;
+
    ul { display: inline-block;
       li { display: inline-block; }
     }

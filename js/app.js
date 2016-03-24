@@ -1,4 +1,6 @@
-// Set options
+smoothScroll.init();
+
+//Headhesive options
        var options = {
            offset: '#showHere',
            classes: {
@@ -9,8 +11,7 @@
        };
 
        // Initialise with options
-       var banner = new Headhesive('.mdl-layout__header', options);
-       console.log(banner);
+       var banner = new Headhesive('.nav',options);
 
        // Headhesive destroy
        // banner.destroy();

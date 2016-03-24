@@ -7,7 +7,16 @@ body {
 #landing {
   background-color: grey; }
 
+#about {
+  position: relative;
+  border: black solid 1px; }
+
 #portfolio {
+  position: absolute;
+  bottom: 10%;
+  z-index: -1; }
+
+.portfolio {
   background-color: grey; }
 
 .container {
@@ -32,7 +41,7 @@ body {
 
 .nav {
   color: white;
-  background-color: blue; }
+  background-color: #c95a5d; }
   .nav ul {
     display: inline-block; }
     .nav ul li {

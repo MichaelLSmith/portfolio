@@ -5,8 +5,6 @@
  * License: MIT
  */
 
-console.log('headhesive load');
-
 (function(root, factory) {
   // console.log(this);
   if (typeof define === "function" && define.amd) {
@@ -62,7 +60,6 @@ console.log('headhesive load');
     return window.pageYOffset !== undefined ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
   };
   var _getElemY = function(elem, side) {
-    console.dir(elem);
     var pos = 0;
     var elemHeight = elem.offsetHeight;
     while (elem) {
@@ -101,12 +98,8 @@ console.log('headhesive load');
     constructor: Headhesive,
     init: function() {
       this.clonedElem = this.elem.cloneNode(true);
-      console.log(this.clonedElem);
-      console.log(this.options.classes.clone);
       this.clonedElem.className += " " + this.options.classes.clone;
       document.body.insertBefore(this.clonedElem, document.body.firstChild);
-      console.log(this);
-      console.log(this.options.offset);
       if (typeof this.options.offset === "number") {
         this.scrollOffset = this.options.offset;
       } else if (typeof this.options.offset === "string") {

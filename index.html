@@ -5,6 +5,7 @@
     <title></title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/version2.css">
+<link rel="stylesheet" type="text/css" href="css/headheasive.css">
 <body>
 <div class="container">
 
@@ -24,23 +25,29 @@
 
     <nav class="nav">Navigation Sticks Here
         <ul>
-            <li><span id="toAbout">About</span></li>
-            <li><span id="toPortfolio">Portfolio</span></li>
-            <li><a id="toContact">Contact</a></li>
+            <li><a data-scroll href="#about" id="toAbout">About</a></li>
+            <li><a data-scroll href="#portfolio" id="toPortfolio">Portfolio</a></li>
+            <li><a data-scroll href="#contact" id="toContact">Contact</a></li>
         </ul>
     </nav>
 
+    <a id="showHere"></a>
+    <section id="about" class="pageHeight">About Me
 
-    <section id="about" class="pageHeight">About Me</section>
-    <section id="portfolio" class="pageHeight">Portfolio</section>
+        <a id="portfolio"></a>
+    </section>
 
 
+
+    <section class="pageHeight portfolio">Portfolio</section>
     <div id="parentOfContact"><section id="contact" class="pageHeight">Contact</section></div>
 </div>
 
 
 <script src="node_modules/html.js/dist/HTML.base.js"></script>
-<!-- <script type="text/javascript" src="js/myScroll.js"></script> -->
-<script type="text/javascript" src="js/stickMenu.js"></script>
+<script type="text/javascript" src="js/vendor/smooth-scroll.js"></script>
+<script type="text/javascript" src="js/vendor/headhesive.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>

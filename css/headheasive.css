@@ -2,6 +2,8 @@
 {
     position:fixed;top:0;left:0;
     background:#c95a5d;
+    margin-bottom: 15px;
+    z-index: 2;
     -webkit-transform:translateY(-100%);
     -ms-transform:translateY(-100%);
     transform:translateY(-100%);

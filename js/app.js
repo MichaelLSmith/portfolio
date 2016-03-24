@@ -9,7 +9,8 @@
        };
 
        // Initialise with options
-       var banner = new Headhesive('.banner', options);
+       var banner = new Headhesive('.mdl-layout__header', options);
+       console.log(banner);
 
        // Headhesive destroy
        // banner.destroy();

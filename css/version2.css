@@ -1,6 +1,15 @@
 body {
   margin: 0; }
 
+svg.logo-container {
+  outline: 1px solid red;
+  font-size: 2em;
+  overflow: visible;
+  height: 150px;
+  width: 50%;
+  margin: auto;
+  display: block; }
+
 .pageHeight {
   height: 450px; }
 

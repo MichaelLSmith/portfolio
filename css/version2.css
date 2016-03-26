@@ -1,22 +1,27 @@
 body {
   margin: 0; }
 
-logo-container {
-  outline: 1px solid red;
-  font-size: 2em;
-  overflow: visible;
-  height: 150px;
-  width: 50%;
-  margin: auto;
+.logo-container {
+  margin: 12% auto 0 auto;
   display: block; }
+  .logo-container svg {
+    margin: 12% auto 0 auto;
+    display: block;
+    font-size: 2em;
+    overflow: visible;
+    height: 150px;
+    width: 50%; }
 
 .pageHeight {
   height: 450px; }
 
 #landing {
-  background-color: grey; }
+  background-color: grey;
+  border: grey solid 1px;
+  width: 75%;
+  margin: auto; }
 
-#about {
+.about {
   position: relative;
   border: black solid 1px; }
 
@@ -25,28 +30,22 @@ logo-container {
   bottom: 10%;
   z-index: -1; }
 
+section.name * {
+  text-align: center;
+  width: 75%;
+  margin: auto; }
+
+#read {
+  width: 90%;
+  margin: 10% auto 0 auto;
+  text-align: center; }
+
 .portfolio {
   background-color: grey; }
 
 .container {
   width: 800px;
   margin: auto; }
-
-.fixedMenu {
-  position: fixed;
-  top: 0;
-  margin-top: 0;
-  z-index: 500;
-  width: 800px;
-  height: 50px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.original {
-  height: 50px; }
-
-.disableMenu {
-  visibility: hidden; }
 
 .nav {
   color: white;

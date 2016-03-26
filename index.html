@@ -7,49 +7,53 @@
 <link rel="stylesheet" type="text/css" href="css/version2.css">
 <link rel="stylesheet" type="text/css" href="css/headheasive.css">
 <body>
+
 <div class="container">
 
-    <a class="top"></a>
+    <a id="top"></a>
     <main id="landing" class="pageHeight">
-        <svg class="logo-container"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 150 150">
-            <ellipse
-              ry="69.167"
-              rx="94.479"
-              cy="-263.284"
-              cx="382.69"
-              fill="none"/>
-            <circle
-              r="64.553"
-              cy="75.107"
-              cx="74.893"
-              fill="none"
-              stroke="#000"
-              stroke-width=".68"/>
-            <text y="73.547" x="74.893" style="line-height:125%;-inkscape-font-specification:'Sans, Normal';text-align:center"
-            font-weight="400" font-size="64.305" font-family="Sans" letter-spacing="0" word-spacing="0" text-anchor="middle" fill="#1c5cb5">
-              <tspan y="73.547" x="74.893">M</tspan>
-            </text>
-            <text y="90.489" x="82.285" style="line-height:125%" font-weight="400" font-size="55.917" font-family="Sans" letter-spacing="0" word-spacing="0" fill="#bf373f" fill-opacity=".941">
-              <tspan style="line-height:125%;-inkscape-font-specification:'Sans, Normal';text-align:center" y="90.489" x="82.285" text-anchor="middle">L
-              </tspan>
-            </text>
-            <text y="123.515" x="74.563"
-             style="line-height:125%;-inkscape-font-specification:'Sans, Normal';text-align:start"
-             font-weight="400" font-size="64.305" font-family="Sans" letter-spacing="0" word-spacing="0" fill="#1c5cb5">
-             <tspan style="line-height:125%;-inkscape-font-specification:'Sans, Normal';text-align:center" y="123.515" x="74.563" text-anchor="middle">S
-             </tspan>
-            </text>
-        </svg>
-            <section id="name">
-                <h1>Michael Laurence Smith</h1>
-                <hr class="center">
-                <h3>Junior Web Developer</h3>
-            </section>
-            <div id="read">Read More</div>
-        </main>
+        <div class="logo-container">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 150 150">
+                <ellipse
+                  ry="69.167"
+                  rx="94.479"
+                  cy="-263.284"
+                  cx="382.69"
+                  fill="none"/>
+                <circle
+                  r="64.553"
+                  cy="75.107"
+                  cx="74.893"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width=".68"/>
+                <text y="73.547" x="74.893" style="line-height:125%;-inkscape-font-specification:'Sans, Normal';text-align:center"
+                font-weight="400" font-size="64.305" font-family="Sans" letter-spacing="0" word-spacing="0" text-anchor="middle" fill="#1c5cb5">
+                  <tspan y="73.547" x="74.893">M</tspan>
+                </text>
+                <text y="90.489" x="82.285" style="line-height:125%" font-weight="400" font-size="55.917" font-family="Sans" letter-spacing="0" word-spacing="0" fill="#bf373f" fill-opacity=".941">
+                  <tspan style="line-height:125%;-inkscape-font-specification:'Sans, Normal';text-align:center" y="90.489" x="82.285" text-anchor="middle">L
+                  </tspan>
+                </text>
+                <text y="123.515" x="74.563"
+                 style="line-height:125%;-inkscape-font-specification:'Sans, Normal';text-align:start"
+                 font-weight="400" font-size="64.305" font-family="Sans" letter-spacing="0" word-spacing="0" fill="#1c5cb5">
+                 <tspan style="line-height:125%;-inkscape-font-specification:'Sans, Normal';text-align:center" y="123.515" x="74.563" text-anchor="middle">S
+                 </tspan>
+                </text>
+            </svg>
+        </div>
+        <section class="name">
+            <h1>Michael Laurence Smith</h1>
+            <hr>
+            <h3>Front-End Web Developer</h3>
+        </section>
+        <div id="read">Read More</div>
+    </main>
 
+    <a id="about"></a>
     <nav class="nav">Navigation Sticks Here
         <ul>
             <li><a data-scroll href="#about" id="toAbout">About</a></li>
@@ -60,17 +64,13 @@
     </nav>
 
     <a id="showHere"></a>
-    <section id="about" class="pageHeight">About Me
-
-        <a id="portfolio"></a>
+    <section class="pageHeight about">About Me
+        <a id="portfolio">portfolio position</a>
     </section>
-
-
 
     <section class="pageHeight portfolio">Portfolio</section>
     <div id="parentOfContact"><section id="contact" class="pageHeight">Contact</section></div>
 </div>
-
 
 <script src="node_modules/html.js/dist/HTML.base.js"></script>
 <script type="text/javascript" src="js/vendor/smooth-scroll.js"></script>

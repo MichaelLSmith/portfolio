@@ -1,6 +1,10 @@
 body {
   margin: 0; }
 
+.container {
+  width: 75%;
+  margin: auto; }
+
 .logo-container {
   margin: 12% auto 0 auto;
   display: block; }
@@ -42,10 +46,6 @@ section.name * {
 
 .portfolio {
   background-color: grey; }
-
-.container {
-  width: 800px;
-  margin: auto; }
 
 .nav {
   color: white;

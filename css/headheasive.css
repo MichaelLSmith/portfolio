@@ -1,6 +1,7 @@
 .banner--clone
 {
     position:fixed;top:0;left:0;
+    width: 100%;
     background:#c95a5d;
     margin-bottom: 15px;
     z-index: 2;
